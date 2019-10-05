@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(37, 224, 37);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgb(1, 78, 1);
+            
+        }
+        h1#msg {
+            color: red;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id='area'>
+        Interaja... 
+    </div>
+    
+    <h1 id="msg">
+        Não clique de novo >:|
+    </h1>
+
+    <script>
+        let a = document.getElementById('area')
+        
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        h.addEventListener('mesage', clicar)
+        
+        function clicar(){
+            a.innerText = 'clicou!'
+            a.style.background = 'red'
+            a.style.boxShadow = '5px 5px 5px rgb(155,6,6)'
+            
+        }
+
+        function sair(){
+            a.innerText = 'saiu'
+            a.style.background = 'rgb(37,224,37)'
+            a.style.boxShadow = '5px 5px 5px rgb(1,78,1)'
+        }
+
+        function entrar() {
+            a.innerText = 'entrou'
+            a.style.background = 'blue'
+            a.style.cursor = 'pointer'
+            a.style.boxShadow = '5px 5px 5px rgb(5,5,119)'
+        }
+    </script>
+</body>
+</html>

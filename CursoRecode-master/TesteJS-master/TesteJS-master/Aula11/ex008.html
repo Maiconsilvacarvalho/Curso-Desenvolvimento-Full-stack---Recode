@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="idade" id="idade" placeholder="Qual sua idade?">
+    <button id="btnEnviar" onclick="pesquisaIdade()">Enviar</button>
+    <div id="msg">Resultado da pesquisa</div>
+    <script>
+        
+        function pesquisaIdade(){
+            let idade = document.getElementById('idade')
+            let id1 = Number(idade.value)
+            let res = document.getElementById('msg')
+            if(id1>=18){
+                res.innerHTML ='Parabéns, você é maior de idade'
+            }else {
+                res.innerHTML = 'Você ainda é menor de idade'
+            }
+        }
+    </script>
+</body>
+</html>

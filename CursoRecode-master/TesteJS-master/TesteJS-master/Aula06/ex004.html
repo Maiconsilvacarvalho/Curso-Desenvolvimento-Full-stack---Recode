@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+            color:teal;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá <strong>${nome}</strong>, Seu nome tem ${nome.length} letras <br>`)
+        document.write(`E ficaria desta forma em maiúsculo <strong>${nome.toUpperCase()}</strong><br>`)
+        document.write(`E em minúscolo ficaria dessa forma ${nome.toLowerCase()}`)
+        /*
+            Código para formatar um número em dinheiro
+            exp: n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        */
+    </script>
+</body>
+</html>
